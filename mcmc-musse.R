@@ -181,7 +181,7 @@ update_parameters_mp <- function(accepted_state_values, indexes, d) {
     lambda =  2*log(d[indexes])
     m = exp(lambda*(u-0.5))
     accepted_state_values[indexes] = accepted_state_values[indexes]*m
-    return(list(accepted_state_values,sum(log(u))))
+    return(list(accepted_state_values,sum(log(m))))
 }
 
 # Function to construct the constraint vector
