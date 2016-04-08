@@ -93,8 +93,8 @@ model <- opt$args[3]
 
 ######################################
 # Reading Input Files
-tree=read.tree(file=file_tree)
-
+tree=read.nexus(file=file_tree)
+# MLS = change from read.tree
 
 
 if (class(tree)=="multiPhylo"){current_tree=tree[[1]]
@@ -293,8 +293,16 @@ for (J in 1:nTREES){
 	current_tree <- matched_tree$phy
         current_exp_rate_hp <- rep(1,3) # starting values for hyperpriors parameters
 	
+	if (model == "musse") {
 	LIKELIHOOD <- make.musse(current_tree, states_vector, no_states, strict=T, sampling.f=rhos)
         initial_parameters <- starting.point.musse(current_tree, no_states, q.div=5, yule=FALSE)   # Starting conditions
+    
+    } else if (model == "classe") { 
+    
+    LIKELIHOOD <- make.classe(current_tree, states_vector, no_states, strict=T, sampling.f=rhos)
+    initial_parameters <- starting.point.classe(current_tree, no_states)   # Starting conditions
+					}
+    
         initial_parameters <- initial_parameters + 0.1
 
         current_state=initial_parameters
@@ -334,9 +342,10 @@ for (J in 1:nTREES){
 		current_state <- temp3[[1]]
 		hasting <- temp1[[2]]+temp2[[2]]+temp3[[2]]
 		gibbs_s=0
-	       		
+	    
+		
 		# Lik Calculation
-	       	current_lik <- try(LIKELIHOOD(c(current_state)))
+			current_lik <- try(LIKELIHOOD(c(current_state)))
 	       	if (is.na(current_lik) | (class(current_lik) == "try-error" )) {current_lik = -Inf}
 		       
             } else {
@@ -370,7 +379,7 @@ for (J in 1:nTREES){
 
 
 		# Acceptance Conditions
-	  #
+	   # print(c(current_lik, accepted_lik))
 		if ( (current_lik-accepted_lik) + (current_prior-accepted_prior) + hasting >= log(runif(1,0,1)) | it==0 | gibbs_s==1){
 			accepted_lik=current_lik
 			accepted_prior=current_prior
