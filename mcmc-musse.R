@@ -29,7 +29,7 @@ suppressPackageStartupMessages(library("picante"))
 
 option_list <- list(
 
-    make_option("--i", type="integer", default=1000000,
+    make_option("--i", type="integer", default=50000,
         help=("Number of iterations to run [default %default]."),
         metavar="Iterations"),
 
@@ -404,7 +404,7 @@ for (J in 1:nTREES){
 			real_it=real_it+sampling_freq
 		}
 		if ( (it %% print_freq == 0)) {
-			cat(sprintf("%s\t", round(c(real_it,it, accepted_lik, accepted_prior, acc/it, J, accepted_state, accepted_cauchy),3)), "\n", sep="")
+			cat(sprintf("%s\t", round(c(real_it,it, accepted_lik, accepted_prior, acc/it),3)), "\n", sep="")
 		}
 
 
