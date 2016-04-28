@@ -2,8 +2,11 @@
 This repository includes Bayesian implementations of the MuSSE and ClaSSE methods.
 The use of (half-Cauchy or Exponential) hyper-priors on the rate parameters allows to control for overparameterization.
 
+#### Requirements
+R libraries: ape, optparse, picante, diversitree all available at https://cran.r-project.org.
 
-##### References
+
+#### References
 The diversitree library:  
 http://sysbio.oxfordjournals.org/content/58/6/595  
 https://github.com/richfitz/diversitree
