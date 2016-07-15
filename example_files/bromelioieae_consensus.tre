@@ -1,0 +1,241 @@
+#NEXUS
+[R-package APE, Thu Dec 15 19:31:32 2011]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 114;
+	TAXLABELS
+		Acanthostachys_pitcairnioides_H151
+		Acanthostachys_strobilacea_H019
+		Aechmea_alba_K23819
+		Aechmea_bambusoides_BB102
+		Aechmea_bromelifolia_BB116
+		Aechmea_calyculata
+		Aechmea_chantinii_K4
+		Aechmea_distichantha_H008
+		Aechmea_drakeana_H042
+		Aechmea_farinosa_H272
+		Aechmea_fasciata_K5
+		Aechmea_filicaulis_H248
+		Aechmea_fulgens_H144
+		Aechmea_gamosepala
+		Aechmea_gracilis_H043
+		Aechmea_guainumbiorum_BB099
+		Aechmea_kertesziae_H270
+		Aechmea_lamarchei_H242
+		Aechmea_lueddemanniana_H150
+		Aechmea_mertensii_H044
+		Aechmea_mexicana_H256
+		Aechmea_nudicaulis
+		Aechmea_paniculata_B001
+		Aechmea_pimenti_H271
+		Aechmea_racinae_H257
+		Aechmea_recurvata_J014
+		Aechmea_romeroi_K24549
+		Aechmea_turbinocalyx_K24459
+		Ananas_ananassoides_R111
+		Ananas_bracteatus_R106
+		Ananas_comosus_H136
+		Ananas_fritzmuller_R105
+		Ananas_nanus_H040
+		Androlepis_skinneri_H048
+		Araeococcus_flagellifolius_K9
+		Araeococcus_goeldianus_H206
+		Billbergia_amoena_H298
+		Billbergia_decora_H129
+		Billbergia_nutans_H280
+		Billbergia_tweediana_BB121
+		Bromelia_antiacantha_K24443
+		Bromelia_irwinii_K24444
+		Bromelia_pinguin_B008
+		Bromelia_plumieri_MB119
+		Bromelia_serra_H029
+		Canistropsis_billbergioides_citr_B007
+		Canistropsis_microps_H301
+		Canistrum_aurantiacum_BB092
+		Canistrum_camacaenses_H302
+		Canistrum_cyathiformis_R102
+		Canistrum_fosterianum_H047
+		Chevaliera_cariocae
+		Chevaliera_sphaerocephala_H030
+		Cryptanthus_bahianus_H214
+		Cryptanthus_bromelioides
+		Cryptanthus_colnagui_H303
+		Cryptanthus_diamantinensis_H311
+		Cryptanthus_glaziovii_H215
+		Cryptanthus_odoratissimus_BB122
+		Cryptanthus_warren_BB123
+		Deinacanthon_urbanianum_H140
+		Disteganthus_basi_H304
+		Edmundoa_ambigua_BB124
+		Edmundoa_lindenii_H213
+		Edmundoa_perplexa_BB125
+		Fascicularia_bicolor_H006a
+		Fernseea_itatiaiae_H067b
+		Greigia_mulfordii_H111
+		Greigia_spec_H157
+		Greigia_sphacelata_H004
+		Hohenbergia_eriostachya
+		Hohenbergia_penduliflora_H306
+		Hohenbergia_polycephala_BB126
+		Hohenbergia_proctori_BB127
+		Hohenbergia_stellata_H037
+		Hohenbergia_urbaniana_BB128
+		Hohenbergiopsis_guatemalensis_H138
+		Lymania_alvimii_H087
+		Lymania_corallinae_H307
+		Neoglaziovia_variegata_H052
+		Neoregelia_bicolor_H081
+		Neoregelia_binotii_EU219682
+		Neoregelia_laevis_H080
+		Nidularium_procerum_H137
+		Ochagavia_andina_C096
+		Ochagavia_elegans_H023
+		Ochagavia_litoralis_H015
+		Orthophytum_albopictum_BB006
+		Orthophytum_compactum_BB129
+		Orthophytum_diamantinense_ORT71
+		Orthophytum_disjunctum
+		Orthophytum_harleyi_ORT61
+		Orthophytum_maracasense
+		Orthophytum_saxicola_BB120
+		Orthophytum_supthutii_H223
+		Orthophytum_ulei_BB119
+		Orthophytum_vagans_BB130_H308
+		Portea_grandiflora_EU780885
+		Portea_kermesina_B006
+		Portea_lepthanta_H239
+		Portea_petropolitana_H053
+		Pseudananas_sagenarius_K24447
+		Quesnelia_arvensis_EU780886
+		Quesnelia_edmundoi_H050
+		Quesnelia_lateralis_H051
+		Quesnelia_liboniana_H220
+		Quesnelia_quesneliana_H309
+		Ronnbergia_explodens_H210
+		Ronnbergia_petersii_H120
+		Streptocalyx_colombianus_B009
+		Streptocalyx_poeppigii_H267
+		Ursulaea_macvaughii_H310
+		Ursulaea_tuitensis_H033
+		Wittrockia_superba_H049
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Acanthostachys_pitcairnioides_H151,
+		2	Acanthostachys_strobilacea_H019,
+		3	Aechmea_alba_K23819,
+		4	Aechmea_bambusoides_BB102,
+		5	Aechmea_bromelifolia_BB116,
+		6	Aechmea_calyculata,
+		7	Aechmea_chantinii_K4,
+		8	Aechmea_distichantha_H008,
+		9	Aechmea_drakeana_H042,
+		10	Aechmea_farinosa_H272,
+		11	Aechmea_fasciata_K5,
+		12	Aechmea_filicaulis_H248,
+		13	Aechmea_fulgens_H144,
+		14	Aechmea_gamosepala,
+		15	Aechmea_gracilis_H043,
+		16	Aechmea_guainumbiorum_BB099,
+		17	Aechmea_kertesziae_H270,
+		18	Aechmea_lamarchei_H242,
+		19	Aechmea_lueddemanniana_H150,
+		20	Aechmea_mertensii_H044,
+		21	Aechmea_mexicana_H256,
+		22	Aechmea_nudicaulis,
+		23	Aechmea_paniculata_B001,
+		24	Aechmea_pimenti_H271,
+		25	Aechmea_racinae_H257,
+		26	Aechmea_recurvata_J014,
+		27	Aechmea_romeroi_K24549,
+		28	Aechmea_turbinocalyx_K24459,
+		29	Ananas_ananassoides_R111,
+		30	Ananas_bracteatus_R106,
+		31	Ananas_comosus_H136,
+		32	Ananas_fritzmuller_R105,
+		33	Ananas_nanus_H040,
+		34	Androlepis_skinneri_H048,
+		35	Araeococcus_flagellifolius_K9,
+		36	Araeococcus_goeldianus_H206,
+		37	Billbergia_amoena_H298,
+		38	Billbergia_decora_H129,
+		39	Billbergia_nutans_H280,
+		40	Billbergia_tweediana_BB121,
+		41	Bromelia_antiacantha_K24443,
+		42	Bromelia_irwinii_K24444,
+		43	Bromelia_pinguin_B008,
+		44	Bromelia_plumieri_MB119,
+		45	Bromelia_serra_H029,
+		46	Canistropsis_billbergioides_citr_B007,
+		47	Canistropsis_microps_H301,
+		48	Canistrum_aurantiacum_BB092,
+		49	Canistrum_camacaenses_H302,
+		50	Canistrum_cyathiformis_R102,
+		51	Canistrum_fosterianum_H047,
+		52	Chevaliera_cariocae,
+		53	Chevaliera_sphaerocephala_H030,
+		54	Cryptanthus_bahianus_H214,
+		55	Cryptanthus_bromelioides,
+		56	Cryptanthus_colnagui_H303,
+		57	Cryptanthus_diamantinensis_H311,
+		58	Cryptanthus_glaziovii_H215,
+		59	Cryptanthus_odoratissimus_BB122,
+		60	Cryptanthus_warren_BB123,
+		61	Deinacanthon_urbanianum_H140,
+		62	Disteganthus_basi_H304,
+		63	Edmundoa_ambigua_BB124,
+		64	Edmundoa_lindenii_H213,
+		65	Edmundoa_perplexa_BB125,
+		66	Fascicularia_bicolor_H006a,
+		67	Fernseea_itatiaiae_H067b,
+		68	Greigia_mulfordii_H111,
+		69	Greigia_spec_H157,
+		70	Greigia_sphacelata_H004,
+		71	Hohenbergia_eriostachya,
+		72	Hohenbergia_penduliflora_H306,
+		73	Hohenbergia_polycephala_BB126,
+		74	Hohenbergia_proctori_BB127,
+		75	Hohenbergia_stellata_H037,
+		76	Hohenbergia_urbaniana_BB128,
+		77	Hohenbergiopsis_guatemalensis_H138,
+		78	Lymania_alvimii_H087,
+		79	Lymania_corallinae_H307,
+		80	Neoglaziovia_variegata_H052,
+		81	Neoregelia_bicolor_H081,
+		82	Neoregelia_binotii_EU219682,
+		83	Neoregelia_laevis_H080,
+		84	Nidularium_procerum_H137,
+		85	Ochagavia_andina_C096,
+		86	Ochagavia_elegans_H023,
+		87	Ochagavia_litoralis_H015,
+		88	Orthophytum_albopictum_BB006,
+		89	Orthophytum_compactum_BB129,
+		90	Orthophytum_diamantinense_ORT71,
+		91	Orthophytum_disjunctum,
+		92	Orthophytum_harleyi_ORT61,
+		93	Orthophytum_maracasense,
+		94	Orthophytum_saxicola_BB120,
+		95	Orthophytum_supthutii_H223,
+		96	Orthophytum_ulei_BB119,
+		97	Orthophytum_vagans_BB130_H308,
+		98	Portea_grandiflora_EU780885,
+		99	Portea_kermesina_B006,
+		100	Portea_lepthanta_H239,
+		101	Portea_petropolitana_H053,
+		102	Pseudananas_sagenarius_K24447,
+		103	Quesnelia_arvensis_EU780886,
+		104	Quesnelia_edmundoi_H050,
+		105	Quesnelia_lateralis_H051,
+		106	Quesnelia_liboniana_H220,
+		107	Quesnelia_quesneliana_H309,
+		108	Ronnbergia_explodens_H210,
+		109	Ronnbergia_petersii_H120,
+		110	Streptocalyx_colombianus_B009,
+		111	Streptocalyx_poeppigii_H267,
+		112	Ursulaea_macvaughii_H310,
+		113	Ursulaea_tuitensis_H033,
+		114	Wittrockia_superba_H049
+	;
+	TREE * TREE1 = [&R] ((61:9.990956767,((86:4.561644466,((85:1.901126264,87:1.901126264):0.7194782934,66:2.620604557):1.941039909):2.988562301,((68:1.072677686,69:1.072677686):2.487292707,70:3.559970393):3.990236373):2.440750001):0.9026182117,((41:1.180351289,((43:0.5264920883,(44:0.2518697329,45:0.2518697329):0.2746223554):0.4256641522,42:0.9521562405):0.2281950486):8.758130329,(67:9.083396649,(((((((65:2.035450351,63:2.035450351):1.182555178,((50:2.106634082,64:2.106634082):0.5948400998,(46:2.120908049,47:2.120908049):0.580566133):0.516531347):0.7733918804,(((24:1.777514047,83:1.777514047):0.4285531349,(82:0.2876532361,81:0.2876532361):1.918413946):0.4345657221,(114:1.899591072,84:1.899591072):0.741041832):1.350764505):0.9314348801,((28:1.278593938,8:1.278593938):2.044090397,(103:0.1893692002,107:0.1893692002):3.133315135):1.600147954):1.394927704,((((((78:2.764716146,79:2.764716146):0.5737336975,(10:1.838870908,13:1.838870908):1.499578935):0.7518737304,(((34:0.911054523,112:0.911054523):0.4834102603,(19:0.8085317573,21:0.8085317573):0.585933026):0.6995759598,113:2.094040743):1.996282831):0.4753979474,(53:4.019835063,(3:2.338579807,(52:1.37830969,(18:0.7198406107,5:0.7198406107):0.6584690792):0.9602701171):1.681255256):0.5458864582):0.6378753015,(105:4.467591401,(((22:2.804182677,106:2.804182677):0.8957282734,(11:3.476351742,((((6:0.1218885558,17:0.1218885558):0.2445163004,25:0.3664048562):1.186801591,(15:1.135494932,14:1.135494932):0.4177115155):0.8403641636,26:2.393570611):1.082781131):0.2235592077):0.1624230643,((38:2.332817205,37:2.332817205):0.6790956071,39:3.011912812):0.8504212027):0.6052573867):0.7360054219):0.5138455376,((35:1.829582169,36:1.829582169):3.184714333,(((23:3.776063355,(((27:1.372964077,7:1.372964077):1.332967379,20:2.705931455):0.4585714766,12:3.164502932):0.6115604228):0.6384156103,((111:2.34712291,110:2.34712291):1.518333279,(49:0.8604025332,75:0.8604025332):3.005053655):0.5490227764):0.4544445291,((104:2.279873402,(51:1.413171481,4:1.413171481):0.8667019213):1.936399785,((16:2.776100601,((98:0.9394204308,99:0.9394204308):0.9263855091,101:1.86580594):0.9102946615):0.4033533219,(100:0.4362667495,48:0.4362667495):2.743187174):1.036819265):0.6526503062):0.1453730083):0.703145858):0.6003176327):0.7661196465,((80:6.454187516,(2:5.313819232,1:5.313819232):1.140368284):0.2733037901,(((9:3.077932824,109:3.077932824):1.222493092,108:4.300425915):1.447113634,(((((40:0.1210721996,76:0.1210721996):0.1840568911,74:0.3051290907):0.2915529921,73:0.5966820828):1.036369382,(71:1.037739605,72:1.037739605):0.5953118598):2.733420332,77:4.366471796):1.381067753):0.979951756):0.3563883339):0.5752750464,((((59:5.998300447,(97:4.732318279,((((93:1.08326987,91:1.08326987):1.244840199,(92:0.09981394832,94:0.09981394832):2.228296121):0.9365855026,90:3.264695571):0.9702411311,89:4.234936702):0.4973815763):1.265982168):0.6377121418,((88:1.667316066,96:1.667316066):4.324722458,(58:4.977887947,95:4.977887947):1.014150577):0.6439740641):0.2265105715,((60:1.358002581,54:1.358002581):1.177354513,((56:1.333289508,57:1.333289508):0.3371149354,55:1.670404444):0.8649526507):4.327166066):0.3944488781,(((32:1.605997715,62:1.605997715):0.4135215724,((29:0.668663136,33:0.668663136):0.5152313675,(30:0.6048327163,31:0.6048327163):0.5790617871):0.8356247842):1.536039807,102:3.555559095):3.701412943):0.4021826479):1.424241963):0.8550849691):0.9550933607);
+END;

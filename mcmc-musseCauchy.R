@@ -72,7 +72,9 @@ option_list <- list(
 
 # number of traits is pending
 # number of trees is pending
-parser_object <- OptionParser(usage = "Usage: %prog [Options] [TREE] [STATES] [MODEL]\n\n[TREE] Path to a file containig one or more phylogenetic tree(s).\n[STATES] Path to a file containig the name of each species in the pylogenetic file, along with their respective state.\n[MODEL] Model to be used for the bayesian calculations. The model can be \"musse\", \"geosse\" or \"classe\". \n", option_list=option_list, description="B-Diversitree is a module that runs a bayesian implementation of Musse, Geosse and Classe models present in the R package Diversitree.")
+parser_object <- OptionParser(usage = "Usage: %prog [Options] [TREE] [STATES] [MODEL]\n\n[TREE] Path to a file containig one or more phylogenetic tree(s).\n[STATES] Path to a file containig the name of each species in the pylogenetic file, along with their respective state.\n[MODEL] Model to be used for the bayesian calculations. The model can be \"musse\", \"geosse\" or \"classe\". \n", 
+option_list=option_list, 
+description="mcmc-musse is a module that runs a bayesian implementation of Musse, Geosse and Classe models present in the R package Diversitree.")
 opt <- parse_args(parser_object, args = commandArgs(trailingOnly = TRUE), positional_arguments=TRUE)
 
 #####################################
