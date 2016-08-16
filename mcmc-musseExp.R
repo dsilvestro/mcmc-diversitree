@@ -314,6 +314,7 @@ for (J in 1:nTREES){
 	    cat(c("Iteration", "likelihood", "prior", "acceptance", "tree", names(accepted_state), "g_lamb", "g_mu", "g_q"), "\n", append=FALSE, file=paste(opt$args[1], "_", opt$args[3], "_mcmcEXP.log", sep=""), sep="\t")
 	  }
 
+	acc=0
 
 	for (it in 1:iterations){
 
