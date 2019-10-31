@@ -95,7 +95,7 @@ model <- opt$args[3]
 
 ######################################
 # Reading Input Files
-tree=read.tree(file=file_tree)
+tree=read.nexus(file=file_tree)
 
 
 
@@ -285,7 +285,9 @@ for (J in 1:nTREES){
 	names(states_vector) <- row.names(matched_tree$data) # adding names to each state
 	current_tree <- matched_tree$phy
         current_cauchy <- rep(1,3) # starting values for hyperpriors parameters
-
+	
+	print(c("MODE:", model))
+	
         if (model == "musse"){
 		  LIKELIHOOD <- make.musse(current_tree, states_vector, no_states, strict=T, sampling.f=rhos)
 	  } else if (model == "geosse") {

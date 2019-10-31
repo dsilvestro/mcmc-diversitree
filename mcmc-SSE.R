@@ -1,13 +1,3 @@
-#!/usr/bin/env Rscript
-# Written by:
-# Jose Rodrigo Flores Espinosa <joserodrigo.floresespinosa@unil.ch>
-# Daniele Silvestro <daniele.silvestro@unil.ch>
-# In colaboration with:
-# Martha Serrano <martha.serrano@unil.ch>
-
-
-#####################################
-#####################################
 ### B-Diversitree is a module that runs a bayesian implementation of the Musse, Geosse and Classe models present in the package Diversitree.
 ###
 ###
@@ -112,6 +102,7 @@ if(is.null(opt$options$rho)) # by default complete sampling
         {
             rhos_str <- opt$options$rho
             rhos <- as.numeric(strsplit(rhos_str," ")[[1]])
+	    print(rhos)
         }
 
 current_tree <- matched_tree$phy
