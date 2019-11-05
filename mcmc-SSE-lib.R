@@ -4,7 +4,7 @@ library("picante")
 
 run_mcmc_SSE <- function( tree_file, trait_file, model = "musse", rho = NULL, 
 		sampling_freq = 100, print_freq = 1000, iterations = 50000, 
-		constraint = NULL, nTREES = 1, burnin = 0, 
+		constraint = NULL, nTREES = 1, burnin = 0, outfile = "",
 		update_freq = c(0.2,0.4,0.99), tuning_prm = c(1.5,1.5,2,2)){
 
 	# Reading Input Files
@@ -115,8 +115,14 @@ run_mcmc_SSE <- function( tree_file, trait_file, model = "musse", rho = NULL,
 
 	##################################
 	# Main Program
-	output_file = paste(tree_file, "_", model, "_mcmcEXP.log", sep="")
+	if (outfile==""){
+		output_file = paste(tree_file, "_", model, "_mcmcEXP.log", sep="")		
+	}else{
+		output_file = outfile
+	}
+	
 	cat(paste("Writing to File: ", output_file, "\n", sep=""))
+	
 
 	real_it=0
 	for (J in 1:nTREES){
