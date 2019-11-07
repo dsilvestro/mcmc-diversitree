@@ -1,19 +1,18 @@
 library("diversitree")
 library("picante")
 
-comb_areas <- function(data_SPGC, column_areaA, columns_areaB){
-	x1 = rowSums(data_SPGC[, columns_areaA])
-	x1[x1>0] <- 1
-	x2 = rowSums(data_SPGC[, columns_areaB])
-	x2[x2>0] <- 2	
-	out <- sum(x1, x2)	
-	out <- data.frame(label = rownames(x), trait= out)
-	out <- out[out > 0, ]
-	out$trait <- out$trait - 1	
-	return(out)
+comb_areas <- function(data_SPGC, columns_areaA, columns_areaB){
+  x1 = rowSums(data_SPGC[, columns_areaA])
+  x1[x1>0] <- 1
+  x2 = rowSums(data_SPGC[, columns_areaB])
+  x2[x2>0] <- 2	
+  out <- x1 + x2	
+  names(out) <- NULL
+  out <- data.frame(label = rownames(data_SPGC), trait = out)
+  out <- out[out$trait > 0, ]
+  out$trait <- out$trait - 1	
+  return(out)
 }
-
-
 
 run_mcmc_SSE <- function( tree_file, trait_file, model = "musse", rho = NULL, 
 		sampling_freq = 100, print_freq = 1000, iterations = 50000, 
