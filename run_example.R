@@ -1,15 +1,17 @@
 library("diversitree")
 library("picante")
 
-source("/Users/danielesilvestro/Software/mcmc-diversitree/mcmc-SSE-lib.R")
-setwd("/Users/danielesilvestro/Software/mcmc-diversitree/example_files/")
+source("/Users/dsilvestro/Software/mcmc-diversitree/mcmc-SSE-lib.R")
+setwd("/Users/dsilvestro/Software/mcmc-diversitree/example_files/")
 
 
-# tree file (NEXUS format, can contain multiple trees)
+# tree file (can contain multiple trees)
 tree_file  = "bromelioieae_consensus.tre"
+tree  <- read.nexus(tree_file)
 
 # trait table
 trait_file = "traitGeoSSE.txt"
+range.data <- read.table(file=trait_file, h=T, row.names=1)
 
 # Diversificaiton model. Available options: "musse", "geosse", "classe"
 model      = "geosse" 
@@ -31,7 +33,7 @@ rho        = c(1,1,1) #
 # tuning_prm = c(1.5, 1.5, 2, 2)
 
 
-run_mcmc_SSE(tree_file, trait_file, model, outfile = "bromeliad_geosse.log", iterations = 10000)
+run_mcmc_SSE(tree, range.data, model, outfile = "bromeliad_geosse.log", iterations = 10000)
 
 # read output file
 mcmc.log = "bromeliad_geosse.log"
@@ -62,16 +64,18 @@ hist(difference_in_extinction_rate)
 
 
 # run on multiple trees
-burnin        = 0
+burnin=0
 nTREES=5
 
 tree_file  = "bromelioieae_100.trees"
+trees  <- read.nexus(tree_file)
 
 # trait table
 trait_file = "traitGeoSSE.txt"
+range.data <- read.table(file=trait_file, h=T, row.names=1)
 
 # Diversificaiton model. Available options: "musse", "geosse", "classe"
 model      = "geosse" 
 
-run_mcmc_SSE(tree_file, trait_file, model, outfile = "bromeliad_geosse.log", iterations = 10000, nTREES=5, burnin=100)
+run_mcmc_SSE(trees, range.data, model, outfile = "bromeliad_geosse.log", iterations = 10000, nTREES=5, burnin=100)
 
