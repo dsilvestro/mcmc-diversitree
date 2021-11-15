@@ -147,7 +147,10 @@ run_mcmc_SSE <- function( tree, trait.data, model = "musse", rho = NULL,
     if (class(tree)=="multiPhylo"){current_tree=tree[[J]]}
     else{current_tree=tree}
     
-    current_tree <- force.ultrametric(current_tree)
+    if (!is.ultrametric(current_tree)){
+        current_tree <- force.ultrametric(current_tree)
+    }
+    
     
     states_frame <- trait.data
     matched_tree <- match.phylo.data(current_tree,states_frame) # Drop tips with no info
